@@ -1,0 +1,33 @@
+extends templates/home
+block variables
+	- var testKey = newKey;
+	- var animalsItems = sections.animals;
+	- var featuresItems = sections.features;
+	- var mainBanner = sections.mainBanner;
+	- var reviewsItems = sections.reviews;
+
+
+//- PAGE SPECIFIC HEAD SECTION
+block meta
+	title home
+
+//- PAGE SPECIFIC CONTENT SECTION
+block content
+	.main-banner-block
+		include includes/sections/main-banner-section
+
+	.animals-block
+		.container
+			include includes/sections/animals-section
+
+	.divider-block
+		.container
+			include includes/sections/divider-section
+
+	.features-block
+		.container
+			include includes/sections/features-section
+
+	.reviews-block
+		.container
+			include includes/sections/reviews-section

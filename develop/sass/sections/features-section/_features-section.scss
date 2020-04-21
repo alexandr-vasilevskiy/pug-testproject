@@ -1,0 +1,18 @@
+.features-wrapper {
+    display: flex;
+}
+
+.feature-item {
+    width: calc(33.33% - 40px);
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 20px;
+    align-items: center;
+}
+
+.feature-title {
+    font-size: 20px;
+}

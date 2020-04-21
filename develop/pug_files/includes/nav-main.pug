@@ -1,0 +1,15 @@
+//mixin nav
+//	each item in sitemapLinks
+//		li
+//			a(href=item.href) #{item.title}
+//	li
+//		a.waves-effect.waves-light.btn.modal-trigger(href="#modalSignIn") Login
+
+nav.teal
+	.nav-wrapper.container
+		a.brand-logo(href='./')
+			i.material-icons camera
+		ul#main-nav.right
+			each item in sitemapLinks
+				li
+					a(href=item.href) #{item.title}

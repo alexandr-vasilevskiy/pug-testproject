@@ -1,0 +1,32 @@
+//- about.pug
+block variables
+
+doctype html
+html
+    head
+        //- DEFAULT META
+        include ../includes/home-meta.pug
+
+        //- PAGE SPECIFIC META
+        block meta
+
+        //- DEFAULT CSS
+        include ../includes/home-styles.pug
+
+        //- PAGE SPECIFIC CSS
+        block styles
+    body
+        //- MAIN NAVIGATION
+        include ../includes/nav-main.pug
+
+        //- PAGE CONTENT
+        block content
+
+        //- PAGE FOOTER
+        block footer
+
+        //- DEFAULT SCRIPTS
+        include ../includes/home-scripts.pug
+
+        //- PAGE SPECIFIC SCRIPTS
+        block scripts

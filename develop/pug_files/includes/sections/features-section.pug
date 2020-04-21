@@ -1,0 +1,16 @@
+mixin feature-item
+    each item in featuresItems
+        .feature-item
+            h3.feature-title= item['feature-name']
+            ul.feature-links
+                each link in item.links
+                    li
+                        a(href=link.href title=link.title) #{link.description}
+            p.feature-text= item['feature-text']
+
+if(isTitle == "about")
+    h2.features-title.section-title about page
+else
+    h2.features-title.section-title features
+.features-wrapper
+    +feature-item

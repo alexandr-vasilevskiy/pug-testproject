@@ -1,0 +1,15 @@
+.animals-wrapper
+    h2.animals-title.section-title animals
+    each val in animalsItems
+        .animal-item
+            .animal-img
+                img(src= val.photo)
+            .animal-content
+                h2.animal-title= val.name
+                    span= (val.species)
+                ul.animal-food
+                    if(val.favFoods)
+                        li= val.favFoods
+                    else
+                        li= "Any food"
+                p.text= val.text

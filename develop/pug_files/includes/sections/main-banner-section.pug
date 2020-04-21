@@ -1,0 +1,16 @@
+.banner-wrapper
+    .banner-img
+        if(mainBanner[ 'image' ])
+            img(src=mainBanner[ 'image' ])
+        else
+            img(src="./assets/images/banner.png")
+        .content
+            h1.banner-title= mainBanner.title
+            h2.sub-banner-title= mainBanner["sub-title"]
+            .banner-links
+                - for ( var x = 0; x < mainBanner.links.length; x++ )
+                    a(href=mainBanner.links[x].url) #{mainBanner.links[x].title}
+
+            .banner-buttons
+                each bannerButton in mainBanner.buttons
+                    a.btn(href=bannerButton.href title=bannerButton.title) #{bannerButton.text}

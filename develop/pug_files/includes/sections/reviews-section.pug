@@ -1,0 +1,12 @@
+h2.reviews-title.section-title reviews
+.reviews-wrapper
+    each reviewItem in reviewsItems
+        .review-item
+            .review-profile
+                .review-avatar
+                    img(src=reviewItem.avatar)
+                .review-persone-info
+                    .review-name= reviewItem.name
+                    .review-position= reviewItem.position
+            .review-content
+                p= reviewItem.text

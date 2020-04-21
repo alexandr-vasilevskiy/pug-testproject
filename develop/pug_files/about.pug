@@ -1,0 +1,26 @@
+extends templates/about-template
+block variables
+    - var testKey = newKey;
+    - var featuresItems = sections.features;
+    - var isTitle = "about"
+
+
+//- PAGE SPECIFIC HEAD SECTION
+block meta
+    title about
+
+//- PAGE SPECIFIC CONTENT SECTION
+block content
+    .features-block
+        .container
+            include includes/sections/features-section
+
+block footer
+    .footer-block
+        .container
+            h4 new footer block #{newKey[0]}
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta excepturi hic optio sunt. Recusandae, tenetur.
+            ul
+                each footerLink in newKey
+                    li
+                        a(href="#")= footerLink

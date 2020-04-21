@@ -1,0 +1,30 @@
+.divider-block {
+    background-color: #009688;
+}
+
+.divider-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.divider-content {
+    flex: 1 0 60%;
+    padding: 15px;
+    color: #fff;
+}
+
+.divider-buttons {
+    margin: 20px 0;
+    border-radius: 15px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: lightseagreen;
+    justify-content: center;
+
+    .btn {
+        margin: 10px 0;
+    }
+}
+
